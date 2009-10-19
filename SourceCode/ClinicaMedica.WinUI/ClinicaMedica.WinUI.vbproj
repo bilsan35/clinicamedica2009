@@ -55,6 +55,24 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controles\ControlButton.Designer.vb">
+      <DependentUpon>ControlButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\TabControl.Designer.vb">
+      <DependentUpon>TabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TabControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\TabPage.Designer.vb">
+      <DependentUpon>TabPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TabPage.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FormPrincipal.Designer.vb">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </Compile>
@@ -78,6 +96,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controles\TabControl.resx">
+      <DependentUpon>TabControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
