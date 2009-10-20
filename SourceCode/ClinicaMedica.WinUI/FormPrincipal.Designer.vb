@@ -217,7 +217,7 @@ Partial Class FormPrincipal
         Me.Controls.Add(Me.tabMenu)
         Me.IsMdiContainer = True
         Me.Name = "FormPrincipal"
-        Me.Text = "FormPrincipal"
+        Me.Text = "SGCM - SISTEMA DE GESTÃO DE CLÍNICA MÉDICA"
         Me.tabMenu.ResumeLayout(False)
         Me.tbGeral.ResumeLayout(False)
         Me.tbGeral.PerformLayout()
