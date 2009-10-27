@@ -26,22 +26,23 @@ Partial Class FormPrincipal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.tabMenu = New System.Windows.Forms.TabControl
         Me.tbGeral = New System.Windows.Forms.TabPage
-        Me.tbAdministracao = New System.Windows.Forms.TabPage
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
         Me.btnMedicos = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.tbFinanceiro = New System.Windows.Forms.TabPage
+        Me.tbAdministracao = New System.Windows.Forms.TabPage
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.tbFinanceiro = New System.Windows.Forms.TabPage
         Me.tbConfiguracao = New System.Windows.Forms.TabPage
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.tbAjuda = New System.Windows.Forms.TabPage
         Me.tabMenu.SuspendLayout()
         Me.tbGeral.SuspendLayout()
-        Me.tbAdministracao.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
+        Me.tbAdministracao.SuspendLayout()
         Me.ToolStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,6 +55,7 @@ Partial Class FormPrincipal
         Me.tabMenu.Controls.Add(Me.tbAdministracao)
         Me.tabMenu.Controls.Add(Me.tbFinanceiro)
         Me.tabMenu.Controls.Add(Me.tbConfiguracao)
+        Me.tabMenu.Controls.Add(Me.tbAjuda)
         Me.tabMenu.Font = New System.Drawing.Font("Calibri", 9.25!)
         Me.tabMenu.ImageList = Me.ImageList1
         Me.tabMenu.Location = New System.Drawing.Point(0, 0)
@@ -74,19 +76,6 @@ Partial Class FormPrincipal
         Me.tbGeral.TabIndex = 0
         Me.tbGeral.Text = "Geral"
         Me.tbGeral.UseVisualStyleBackColor = True
-        '
-        'tbAdministracao
-        '
-        Me.tbAdministracao.BackgroundImage = CType(resources.GetObject("tbAdministracao.BackgroundImage"), System.Drawing.Image)
-        Me.tbAdministracao.Controls.Add(Me.ToolStrip2)
-        Me.tbAdministracao.ImageIndex = 0
-        Me.tbAdministracao.Location = New System.Drawing.Point(4, 26)
-        Me.tbAdministracao.Name = "tbAdministracao"
-        Me.tbAdministracao.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbAdministracao.Size = New System.Drawing.Size(583, 76)
-        Me.tbAdministracao.TabIndex = 1
-        Me.tbAdministracao.Text = "Administração"
-        Me.tbAdministracao.UseVisualStyleBackColor = True
         '
         'ToolStrip1
         '
@@ -133,16 +122,18 @@ Partial Class FormPrincipal
         Me.ToolStripButton1.Text = "Agenda"
         Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'tbFinanceiro
+        'tbAdministracao
         '
-        Me.tbFinanceiro.ImageIndex = 3
-        Me.tbFinanceiro.Location = New System.Drawing.Point(4, 26)
-        Me.tbFinanceiro.Name = "tbFinanceiro"
-        Me.tbFinanceiro.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbFinanceiro.Size = New System.Drawing.Size(583, 76)
-        Me.tbFinanceiro.TabIndex = 2
-        Me.tbFinanceiro.Text = "Financeiro"
-        Me.tbFinanceiro.UseVisualStyleBackColor = True
+        Me.tbAdministracao.BackgroundImage = CType(resources.GetObject("tbAdministracao.BackgroundImage"), System.Drawing.Image)
+        Me.tbAdministracao.Controls.Add(Me.ToolStrip2)
+        Me.tbAdministracao.ImageIndex = 0
+        Me.tbAdministracao.Location = New System.Drawing.Point(4, 26)
+        Me.tbAdministracao.Name = "tbAdministracao"
+        Me.tbAdministracao.Padding = New System.Windows.Forms.Padding(3)
+        Me.tbAdministracao.Size = New System.Drawing.Size(583, 76)
+        Me.tbAdministracao.TabIndex = 1
+        Me.tbAdministracao.Text = "Administração"
+        Me.tbAdministracao.UseVisualStyleBackColor = True
         '
         'ToolStrip2
         '
@@ -189,14 +180,16 @@ Partial Class FormPrincipal
         Me.ToolStripButton4.Text = "Cirurgias"
         Me.ToolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'ImageList1
+        'tbFinanceiro
         '
-        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList1.Images.SetKeyName(0, "acoes16x16.png")
-        Me.ImageList1.Images.SetKeyName(1, "bairros16x16.png")
-        Me.ImageList1.Images.SetKeyName(2, "manutencao16x16.png")
-        Me.ImageList1.Images.SetKeyName(3, "orcamento16x16.png")
+        Me.tbFinanceiro.ImageIndex = 3
+        Me.tbFinanceiro.Location = New System.Drawing.Point(4, 26)
+        Me.tbFinanceiro.Name = "tbFinanceiro"
+        Me.tbFinanceiro.Padding = New System.Windows.Forms.Padding(3)
+        Me.tbFinanceiro.Size = New System.Drawing.Size(583, 76)
+        Me.tbFinanceiro.TabIndex = 2
+        Me.tbFinanceiro.Text = "Financeiro"
+        Me.tbFinanceiro.UseVisualStyleBackColor = True
         '
         'tbConfiguracao
         '
@@ -208,6 +201,26 @@ Partial Class FormPrincipal
         Me.tbConfiguracao.TabIndex = 3
         Me.tbConfiguracao.Text = "Configurações"
         Me.tbConfiguracao.UseVisualStyleBackColor = True
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "acoes16x16.png")
+        Me.ImageList1.Images.SetKeyName(1, "bairros16x16.png")
+        Me.ImageList1.Images.SetKeyName(2, "manutencao16x16.png")
+        Me.ImageList1.Images.SetKeyName(3, "orcamento16x16.png")
+        '
+        'tbAjuda
+        '
+        Me.tbAjuda.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.tbAjuda.Location = New System.Drawing.Point(4, 26)
+        Me.tbAjuda.Name = "tbAjuda"
+        Me.tbAjuda.Padding = New System.Windows.Forms.Padding(3)
+        Me.tbAjuda.Size = New System.Drawing.Size(583, 76)
+        Me.tbAjuda.TabIndex = 4
+        Me.tbAjuda.Text = "Ajuda"
+        Me.tbAjuda.UseVisualStyleBackColor = True
         '
         'FormPrincipal
         '
@@ -221,10 +234,10 @@ Partial Class FormPrincipal
         Me.tabMenu.ResumeLayout(False)
         Me.tbGeral.ResumeLayout(False)
         Me.tbGeral.PerformLayout()
-        Me.tbAdministracao.ResumeLayout(False)
-        Me.tbAdministracao.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        Me.tbAdministracao.ResumeLayout(False)
+        Me.tbAdministracao.PerformLayout()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
         Me.ResumeLayout(False)
@@ -244,4 +257,5 @@ Partial Class FormPrincipal
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
     Friend WithEvents tbConfiguracao As System.Windows.Forms.TabPage
+    Friend WithEvents tbAjuda As System.Windows.Forms.TabPage
 End Class
