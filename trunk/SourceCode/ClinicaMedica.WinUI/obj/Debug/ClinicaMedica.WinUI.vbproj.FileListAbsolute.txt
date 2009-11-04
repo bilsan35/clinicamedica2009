@@ -1,0 +1,15 @@
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\bin\Debug\ClinicaMedica.WinUI.exe
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\bin\Debug\ClinicaMedica.WinUI.pdb
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\bin\Debug\ClinicaMedica.WinUI.xml
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.Resources.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.vbproj.GenerateResource.Cache
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.exe
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.xml
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.pdb
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmMedicos.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmPrincipal.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmPacientes.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmAtendentes.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmAgenda.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmFornecedores.resources
