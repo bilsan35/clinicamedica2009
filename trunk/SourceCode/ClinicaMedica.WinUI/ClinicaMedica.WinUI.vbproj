@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5727E90E-26DD-494B-9C26-F804E83857EB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -55,10 +55,40 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormPrincipal.Designer.vb">
-      <DependentUpon>FormPrincipal.vb</DependentUpon>
+    <Compile Include="Forms\frmAgenda.Designer.vb">
+      <DependentUpon>frmAgenda.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipal.vb">
+    <Compile Include="Forms\frmAgenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAtendentes.Designer.vb">
+      <DependentUpon>frmAtendentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAtendentes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFornecedores.Designer.vb">
+      <DependentUpon>frmFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMedicos.Designer.vb">
+      <DependentUpon>frmMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPacientes.Designer.vb">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -78,8 +108,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAgenda.resx">
+      <DependentUpon>frmAgenda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAtendentes.resx">
+      <DependentUpon>frmAtendentes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFornecedores.resx">
+      <DependentUpon>frmFornecedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMedicos.resx">
+      <DependentUpon>frmMedicos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPacientes.resx">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -98,6 +149,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
