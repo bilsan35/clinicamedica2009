@@ -1,0 +1,9 @@
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\bin\Debug\ClinicaMedica.Classes.dll
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\bin\Debug\ClinicaMedica.Classes.pdb
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\bin\Debug\ClinicaMedica.Classes.xml
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.Resources.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.vbproj.GenerateResource.Cache
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.dll
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.xml
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.pdb
