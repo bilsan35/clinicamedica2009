@@ -29,23 +29,36 @@ Partial Class frmPrincipal
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
         Me.btnMedicos = New System.Windows.Forms.ToolStripButton
         Me.btnPacientes = New System.Windows.Forms.ToolStripButton
-        Me.btnAtendentes = New System.Windows.Forms.ToolStripButton
-        Me.btnAgenda = New System.Windows.Forms.ToolStripButton
+        Me.btnEnfermeiras = New System.Windows.Forms.ToolStripButton
+        Me.btnSecretarias = New System.Windows.Forms.ToolStripButton
         Me.btnFornecedores = New System.Windows.Forms.ToolStripButton
         Me.tbAdministracao = New System.Windows.Forms.TabPage
+        Me.ToolStrip6 = New System.Windows.Forms.ToolStrip
+        Me.btnConvenios = New System.Windows.Forms.ToolStripButton
+        Me.btnConsultas = New System.Windows.Forms.ToolStripButton
+        Me.btnCirurgias = New System.Windows.Forms.ToolStripButton
+        Me.btnLeitos = New System.Windows.Forms.ToolStripButton
+        Me.btnMateriais = New System.Windows.Forms.ToolStripButton
+        Me.btnAgenda = New System.Windows.Forms.ToolStripButton
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
         Me.tbFinanceiro = New System.Windows.Forms.TabPage
+        Me.ToolStrip7 = New System.Windows.Forms.ToolStrip
+        Me.btnRelatorios = New System.Windows.Forms.ToolStripButton
         Me.ToolStrip5 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton12 = New System.Windows.Forms.ToolStripButton
         Me.tbConfiguracao = New System.Windows.Forms.TabPage
+        Me.ToolStrip8 = New System.Windows.Forms.ToolStrip
+        Me.btnUsuarios = New System.Windows.Forms.ToolStripButton
         Me.ToolStrip3 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.tbAjuda = New System.Windows.Forms.TabPage
+        Me.ToolStrip9 = New System.Windows.Forms.ToolStrip
+        Me.btnInformacoes = New System.Windows.Forms.ToolStripButton
         Me.ToolStrip4 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton
@@ -55,34 +68,22 @@ Partial Class frmPrincipal
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton13 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton14 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStrip6 = New System.Windows.Forms.ToolStrip
-        Me.btnConvenios = New System.Windows.Forms.ToolStripButton
-        Me.btnCirurgias = New System.Windows.Forms.ToolStripButton
-        Me.btnLeitos = New System.Windows.Forms.ToolStripButton
-        Me.ToolStrip7 = New System.Windows.Forms.ToolStrip
-        Me.btnContas = New System.Windows.Forms.ToolStripButton
-        Me.btnRelatorios = New System.Windows.Forms.ToolStripButton
-        Me.ToolStrip8 = New System.Windows.Forms.ToolStrip
-        Me.ToolStripButton15 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton16 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStrip9 = New System.Windows.Forms.ToolStrip
-        Me.ToolStripButton17 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton18 = New System.Windows.Forms.ToolStripButton
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.tabMenu.SuspendLayout()
         Me.tbGeral.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.tbAdministracao.SuspendLayout()
+        Me.ToolStrip6.SuspendLayout()
         Me.ToolStrip2.SuspendLayout()
         Me.tbFinanceiro.SuspendLayout()
+        Me.ToolStrip7.SuspendLayout()
         Me.ToolStrip5.SuspendLayout()
         Me.tbConfiguracao.SuspendLayout()
+        Me.ToolStrip8.SuspendLayout()
         Me.ToolStrip3.SuspendLayout()
         Me.tbAjuda.SuspendLayout()
-        Me.ToolStrip4.SuspendLayout()
-        Me.ToolStrip6.SuspendLayout()
-        Me.ToolStrip7.SuspendLayout()
-        Me.ToolStrip8.SuspendLayout()
         Me.ToolStrip9.SuspendLayout()
+        Me.ToolStrip4.SuspendLayout()
         Me.SuspendLayout()
         '
         'tabMenu
@@ -120,7 +121,7 @@ Partial Class frmPrincipal
         Me.ToolStrip1.BackColor = System.Drawing.Color.Transparent
         Me.ToolStrip1.Font = New System.Drawing.Font("Calibri", 9.25!)
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnMedicos, Me.btnPacientes, Me.btnAtendentes, Me.btnAgenda, Me.btnFornecedores})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnMedicos, Me.btnPacientes, Me.btnEnfermeiras, Me.btnSecretarias, Me.btnFornecedores})
         Me.ToolStrip1.Location = New System.Drawing.Point(3, 3)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(577, 70)
@@ -149,27 +150,27 @@ Partial Class frmPrincipal
         Me.btnPacientes.Text = "Pacientes"
         Me.btnPacientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'btnAtendentes
+        'btnEnfermeiras
         '
-        Me.btnAtendentes.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnAtendentes.Image = CType(resources.GetObject("btnAtendentes.Image"), System.Drawing.Image)
-        Me.btnAtendentes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnAtendentes.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnAtendentes.Name = "btnAtendentes"
-        Me.btnAtendentes.Size = New System.Drawing.Size(76, 67)
-        Me.btnAtendentes.Text = "Atendentes"
-        Me.btnAtendentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnEnfermeiras.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnEnfermeiras.Image = CType(resources.GetObject("btnEnfermeiras.Image"), System.Drawing.Image)
+        Me.btnEnfermeiras.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnEnfermeiras.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnEnfermeiras.Name = "btnEnfermeiras"
+        Me.btnEnfermeiras.Size = New System.Drawing.Size(77, 67)
+        Me.btnEnfermeiras.Text = "Enfermeiras"
+        Me.btnEnfermeiras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'btnAgenda
+        'btnSecretarias
         '
-        Me.btnAgenda.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnAgenda.Image = CType(resources.GetObject("btnAgenda.Image"), System.Drawing.Image)
-        Me.btnAgenda.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnAgenda.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnAgenda.Name = "btnAgenda"
-        Me.btnAgenda.Size = New System.Drawing.Size(52, 67)
-        Me.btnAgenda.Text = "Agenda"
-        Me.btnAgenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnSecretarias.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnSecretarias.Image = CType(resources.GetObject("btnSecretarias.Image"), System.Drawing.Image)
+        Me.btnSecretarias.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnSecretarias.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnSecretarias.Name = "btnSecretarias"
+        Me.btnSecretarias.Size = New System.Drawing.Size(71, 67)
+        Me.btnSecretarias.Text = "Secretárias"
+        Me.btnSecretarias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'btnFornecedores
         '
@@ -195,6 +196,84 @@ Partial Class frmPrincipal
         Me.tbAdministracao.TabIndex = 1
         Me.tbAdministracao.Text = "Administração"
         Me.tbAdministracao.UseVisualStyleBackColor = True
+        '
+        'ToolStrip6
+        '
+        Me.ToolStrip6.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStrip6.Font = New System.Drawing.Font("Calibri", 9.25!)
+        Me.ToolStrip6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnConvenios, Me.btnConsultas, Me.btnCirurgias, Me.btnLeitos, Me.btnMateriais, Me.btnAgenda})
+        Me.ToolStrip6.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip6.Name = "ToolStrip6"
+        Me.ToolStrip6.Size = New System.Drawing.Size(577, 70)
+        Me.ToolStrip6.TabIndex = 5
+        Me.ToolStrip6.Text = "ToolStrip6"
+        '
+        'btnConvenios
+        '
+        Me.btnConvenios.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnConvenios.Image = CType(resources.GetObject("btnConvenios.Image"), System.Drawing.Image)
+        Me.btnConvenios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnConvenios.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnConvenios.Name = "btnConvenios"
+        Me.btnConvenios.Size = New System.Drawing.Size(67, 67)
+        Me.btnConvenios.Text = "Convênios"
+        Me.btnConvenios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'btnConsultas
+        '
+        Me.btnConsultas.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnConsultas.Image = CType(resources.GetObject("btnConsultas.Image"), System.Drawing.Image)
+        Me.btnConsultas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnConsultas.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnConsultas.Name = "btnConsultas"
+        Me.btnConsultas.Size = New System.Drawing.Size(63, 67)
+        Me.btnConsultas.Text = "Consultas"
+        Me.btnConsultas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'btnCirurgias
+        '
+        Me.btnCirurgias.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnCirurgias.Image = CType(resources.GetObject("btnCirurgias.Image"), System.Drawing.Image)
+        Me.btnCirurgias.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnCirurgias.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnCirurgias.Name = "btnCirurgias"
+        Me.btnCirurgias.Size = New System.Drawing.Size(58, 67)
+        Me.btnCirurgias.Text = "Cirurgias"
+        Me.btnCirurgias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'btnLeitos
+        '
+        Me.btnLeitos.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnLeitos.Image = CType(resources.GetObject("btnLeitos.Image"), System.Drawing.Image)
+        Me.btnLeitos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnLeitos.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnLeitos.Name = "btnLeitos"
+        Me.btnLeitos.Size = New System.Drawing.Size(52, 67)
+        Me.btnLeitos.Text = "Leitos"
+        Me.btnLeitos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'btnMateriais
+        '
+        Me.btnMateriais.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnMateriais.Image = CType(resources.GetObject("btnMateriais.Image"), System.Drawing.Image)
+        Me.btnMateriais.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnMateriais.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnMateriais.Name = "btnMateriais"
+        Me.btnMateriais.Size = New System.Drawing.Size(62, 67)
+        Me.btnMateriais.Text = "Materiais"
+        Me.btnMateriais.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'btnAgenda
+        '
+        Me.btnAgenda.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnAgenda.Image = CType(resources.GetObject("btnAgenda.Image"), System.Drawing.Image)
+        Me.btnAgenda.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnAgenda.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnAgenda.Name = "btnAgenda"
+        Me.btnAgenda.Size = New System.Drawing.Size(52, 67)
+        Me.btnAgenda.Text = "Agenda"
+        Me.btnAgenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStrip2
         '
@@ -256,6 +335,29 @@ Partial Class frmPrincipal
         Me.tbFinanceiro.Text = "Financeiro"
         Me.tbFinanceiro.UseVisualStyleBackColor = True
         '
+        'ToolStrip7
+        '
+        Me.ToolStrip7.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStrip7.Font = New System.Drawing.Font("Calibri", 9.25!)
+        Me.ToolStrip7.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnRelatorios})
+        Me.ToolStrip7.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip7.Name = "ToolStrip7"
+        Me.ToolStrip7.Size = New System.Drawing.Size(577, 70)
+        Me.ToolStrip7.TabIndex = 7
+        Me.ToolStrip7.Text = "ToolStrip7"
+        '
+        'btnRelatorios
+        '
+        Me.btnRelatorios.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnRelatorios.Image = CType(resources.GetObject("btnRelatorios.Image"), System.Drawing.Image)
+        Me.btnRelatorios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnRelatorios.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnRelatorios.Name = "btnRelatorios"
+        Me.btnRelatorios.Size = New System.Drawing.Size(66, 67)
+        Me.btnRelatorios.Text = "Relatórios"
+        Me.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'ToolStrip5
         '
         Me.ToolStrip5.BackColor = System.Drawing.Color.Transparent
@@ -304,6 +406,29 @@ Partial Class frmPrincipal
         Me.tbConfiguracao.TabIndex = 3
         Me.tbConfiguracao.Text = "Configurações"
         Me.tbConfiguracao.UseVisualStyleBackColor = True
+        '
+        'ToolStrip8
+        '
+        Me.ToolStrip8.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStrip8.Font = New System.Drawing.Font("Calibri", 9.25!)
+        Me.ToolStrip8.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnUsuarios})
+        Me.ToolStrip8.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip8.Name = "ToolStrip8"
+        Me.ToolStrip8.Size = New System.Drawing.Size(577, 70)
+        Me.ToolStrip8.TabIndex = 8
+        Me.ToolStrip8.Text = "ToolStrip8"
+        '
+        'btnUsuarios
+        '
+        Me.btnUsuarios.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnUsuarios.Image = CType(resources.GetObject("btnUsuarios.Image"), System.Drawing.Image)
+        Me.btnUsuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnUsuarios.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnUsuarios.Name = "btnUsuarios"
+        Me.btnUsuarios.Size = New System.Drawing.Size(57, 67)
+        Me.btnUsuarios.Text = "Usuários"
+        Me.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStrip3
         '
@@ -354,6 +479,29 @@ Partial Class frmPrincipal
         Me.tbAjuda.TabIndex = 4
         Me.tbAjuda.Text = "Ajuda"
         Me.tbAjuda.UseVisualStyleBackColor = True
+        '
+        'ToolStrip9
+        '
+        Me.ToolStrip9.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStrip9.Font = New System.Drawing.Font("Calibri", 9.25!)
+        Me.ToolStrip9.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip9.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnInformacoes})
+        Me.ToolStrip9.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip9.Name = "ToolStrip9"
+        Me.ToolStrip9.Size = New System.Drawing.Size(577, 70)
+        Me.ToolStrip9.TabIndex = 8
+        Me.ToolStrip9.Text = "ToolStrip9"
+        '
+        'btnInformacoes
+        '
+        Me.btnInformacoes.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
+        Me.btnInformacoes.Image = CType(resources.GetObject("btnInformacoes.Image"), System.Drawing.Image)
+        Me.btnInformacoes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnInformacoes.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnInformacoes.Name = "btnInformacoes"
+        Me.btnInformacoes.Size = New System.Drawing.Size(78, 67)
+        Me.btnInformacoes.Text = "Informações"
+        Me.btnInformacoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStrip4
         '
@@ -455,159 +603,21 @@ Partial Class frmPrincipal
         Me.ToolStripButton14.Text = "Fornecedores"
         Me.ToolStripButton14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
-        'ToolStrip6
+        'StatusStrip1
         '
-        Me.ToolStrip6.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStrip6.Font = New System.Drawing.Font("Calibri", 9.25!)
-        Me.ToolStrip6.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnConvenios, Me.btnCirurgias, Me.btnLeitos})
-        Me.ToolStrip6.Location = New System.Drawing.Point(3, 3)
-        Me.ToolStrip6.Name = "ToolStrip6"
-        Me.ToolStrip6.Size = New System.Drawing.Size(577, 70)
-        Me.ToolStrip6.TabIndex = 5
-        Me.ToolStrip6.Text = "ToolStrip6"
-        '
-        'btnConvenios
-        '
-        Me.btnConvenios.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnConvenios.Image = CType(resources.GetObject("btnConvenios.Image"), System.Drawing.Image)
-        Me.btnConvenios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnConvenios.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnConvenios.Name = "btnConvenios"
-        Me.btnConvenios.Size = New System.Drawing.Size(67, 67)
-        Me.btnConvenios.Text = "Convênios"
-        Me.btnConvenios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'btnCirurgias
-        '
-        Me.btnCirurgias.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnCirurgias.Image = CType(resources.GetObject("btnCirurgias.Image"), System.Drawing.Image)
-        Me.btnCirurgias.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnCirurgias.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnCirurgias.Name = "btnCirurgias"
-        Me.btnCirurgias.Size = New System.Drawing.Size(58, 67)
-        Me.btnCirurgias.Text = "Cirurgias"
-        Me.btnCirurgias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'btnLeitos
-        '
-        Me.btnLeitos.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnLeitos.Image = CType(resources.GetObject("btnLeitos.Image"), System.Drawing.Image)
-        Me.btnLeitos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnLeitos.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnLeitos.Name = "btnLeitos"
-        Me.btnLeitos.Size = New System.Drawing.Size(52, 67)
-        Me.btnLeitos.Text = "Leitos"
-        Me.btnLeitos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStrip7
-        '
-        Me.ToolStrip7.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStrip7.Font = New System.Drawing.Font("Calibri", 9.25!)
-        Me.ToolStrip7.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnContas, Me.btnRelatorios})
-        Me.ToolStrip7.Location = New System.Drawing.Point(3, 3)
-        Me.ToolStrip7.Name = "ToolStrip7"
-        Me.ToolStrip7.Size = New System.Drawing.Size(577, 70)
-        Me.ToolStrip7.TabIndex = 7
-        Me.ToolStrip7.Text = "ToolStrip7"
-        '
-        'btnContas
-        '
-        Me.btnContas.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnContas.Image = CType(resources.GetObject("btnContas.Image"), System.Drawing.Image)
-        Me.btnContas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnContas.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnContas.Name = "btnContas"
-        Me.btnContas.Size = New System.Drawing.Size(52, 67)
-        Me.btnContas.Text = "Contas"
-        Me.btnContas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'btnRelatorios
-        '
-        Me.btnRelatorios.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.btnRelatorios.Image = CType(resources.GetObject("btnRelatorios.Image"), System.Drawing.Image)
-        Me.btnRelatorios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnRelatorios.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnRelatorios.Name = "btnRelatorios"
-        Me.btnRelatorios.Size = New System.Drawing.Size(66, 67)
-        Me.btnRelatorios.Text = "Relatórios"
-        Me.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStrip8
-        '
-        Me.ToolStrip8.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStrip8.Font = New System.Drawing.Font("Calibri", 9.25!)
-        Me.ToolStrip8.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton15, Me.ToolStripButton16})
-        Me.ToolStrip8.Location = New System.Drawing.Point(3, 3)
-        Me.ToolStrip8.Name = "ToolStrip8"
-        Me.ToolStrip8.Size = New System.Drawing.Size(577, 70)
-        Me.ToolStrip8.TabIndex = 8
-        Me.ToolStrip8.Text = "ToolStrip8"
-        '
-        'ToolStripButton15
-        '
-        Me.ToolStripButton15.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripButton15.Image = CType(resources.GetObject("ToolStripButton15.Image"), System.Drawing.Image)
-        Me.ToolStripButton15.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton15.Name = "ToolStripButton15"
-        Me.ToolStripButton15.Size = New System.Drawing.Size(57, 67)
-        Me.ToolStripButton15.Text = "Usuários"
-        Me.ToolStripButton15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStripButton16
-        '
-        Me.ToolStripButton16.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripButton16.Image = CType(resources.GetObject("ToolStripButton16.Image"), System.Drawing.Image)
-        Me.ToolStripButton16.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton16.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton16.Name = "ToolStripButton16"
-        Me.ToolStripButton16.Size = New System.Drawing.Size(73, 67)
-        Me.ToolStripButton16.Text = "Permissões"
-        Me.ToolStripButton16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStrip9
-        '
-        Me.ToolStrip9.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStrip9.Font = New System.Drawing.Font("Calibri", 9.25!)
-        Me.ToolStrip9.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip9.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton17, Me.ToolStripButton18})
-        Me.ToolStrip9.Location = New System.Drawing.Point(3, 3)
-        Me.ToolStrip9.Name = "ToolStrip9"
-        Me.ToolStrip9.Size = New System.Drawing.Size(577, 70)
-        Me.ToolStrip9.TabIndex = 8
-        Me.ToolStrip9.Text = "ToolStrip9"
-        '
-        'ToolStripButton17
-        '
-        Me.ToolStripButton17.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripButton17.Image = CType(resources.GetObject("ToolStripButton17.Image"), System.Drawing.Image)
-        Me.ToolStripButton17.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton17.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton17.Name = "ToolStripButton17"
-        Me.ToolStripButton17.Size = New System.Drawing.Size(78, 67)
-        Me.ToolStripButton17.Text = "Informações"
-        Me.ToolStripButton17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'ToolStripButton18
-        '
-        Me.ToolStripButton18.Font = New System.Drawing.Font("Calibri", 9.25!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripButton18.Image = CType(resources.GetObject("ToolStripButton18.Image"), System.Drawing.Image)
-        Me.ToolStripButton18.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ToolStripButton18.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton18.Name = "ToolStripButton18"
-        Me.ToolStripButton18.Size = New System.Drawing.Size(55, 67)
-        Me.ToolStripButton18.Text = "Contato"
-        Me.ToolStripButton18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 424)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(591, 22)
+        Me.StatusStrip1.TabIndex = 6
+        Me.StatusStrip1.Text = "StatusStrip1"
         '
         'frmPrincipal
         '
-        Me.AccessibleDescription = "0000"
+        Me.AccessibleDescription = ""
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 446)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.tabMenu)
         Me.IsMdiContainer = True
         Me.Name = "frmPrincipal"
@@ -620,29 +630,30 @@ Partial Class frmPrincipal
         Me.ToolStrip1.PerformLayout()
         Me.tbAdministracao.ResumeLayout(False)
         Me.tbAdministracao.PerformLayout()
+        Me.ToolStrip6.ResumeLayout(False)
+        Me.ToolStrip6.PerformLayout()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
         Me.tbFinanceiro.ResumeLayout(False)
         Me.tbFinanceiro.PerformLayout()
+        Me.ToolStrip7.ResumeLayout(False)
+        Me.ToolStrip7.PerformLayout()
         Me.ToolStrip5.ResumeLayout(False)
         Me.ToolStrip5.PerformLayout()
         Me.tbConfiguracao.ResumeLayout(False)
         Me.tbConfiguracao.PerformLayout()
+        Me.ToolStrip8.ResumeLayout(False)
+        Me.ToolStrip8.PerformLayout()
         Me.ToolStrip3.ResumeLayout(False)
         Me.ToolStrip3.PerformLayout()
         Me.tbAjuda.ResumeLayout(False)
         Me.tbAjuda.PerformLayout()
-        Me.ToolStrip4.ResumeLayout(False)
-        Me.ToolStrip4.PerformLayout()
-        Me.ToolStrip6.ResumeLayout(False)
-        Me.ToolStrip6.PerformLayout()
-        Me.ToolStrip7.ResumeLayout(False)
-        Me.ToolStrip7.PerformLayout()
-        Me.ToolStrip8.ResumeLayout(False)
-        Me.ToolStrip8.PerformLayout()
         Me.ToolStrip9.ResumeLayout(False)
         Me.ToolStrip9.PerformLayout()
+        Me.ToolStrip4.ResumeLayout(False)
+        Me.ToolStrip4.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents tabMenu As System.Windows.Forms.TabControl
@@ -650,8 +661,7 @@ Partial Class frmPrincipal
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents btnMedicos As System.Windows.Forms.ToolStripButton
     Friend WithEvents btnPacientes As System.Windows.Forms.ToolStripButton
-    Friend WithEvents btnAtendentes As System.Windows.Forms.ToolStripButton
-    Friend WithEvents btnAgenda As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnEnfermeiras As System.Windows.Forms.ToolStripButton
     Friend WithEvents btnFornecedores As System.Windows.Forms.ToolStripButton
     Friend WithEvents tbAdministracao As System.Windows.Forms.TabPage
     Friend WithEvents ToolStrip2 As System.Windows.Forms.ToolStrip
@@ -673,20 +683,22 @@ Partial Class frmPrincipal
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
     Friend WithEvents ToolStrip6 As System.Windows.Forms.ToolStrip
     Friend WithEvents btnConvenios As System.Windows.Forms.ToolStripButton
-    Friend WithEvents btnCirurgias As System.Windows.Forms.ToolStripButton
-    Friend WithEvents btnLeitos As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnConsultas As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnMateriais As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton5 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton6 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton13 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton14 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStrip7 As System.Windows.Forms.ToolStrip
-    Friend WithEvents btnContas As System.Windows.Forms.ToolStripButton
     Friend WithEvents btnRelatorios As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStrip8 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton15 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripButton16 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnUsuarios As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStrip9 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton17 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripButton18 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnInformacoes As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnCirurgias As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnAgenda As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnLeitos As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnSecretarias As System.Windows.Forms.ToolStripButton
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
 End Class

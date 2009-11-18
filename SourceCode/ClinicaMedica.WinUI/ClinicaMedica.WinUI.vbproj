@@ -37,9 +37,14 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mapper, Version=1.0.2009.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Mapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -55,40 +60,142 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmAgenda.Designer.vb">
+    <Compile Include="Forms\FormsCadastros\frmCadastroConvenio.Designer.vb">
+      <DependentUpon>frmCadastroConvenio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroConvenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroEnfermeiras.Designer.vb">
+      <DependentUpon>frmCadastroEnfermeiras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroEnfermeiras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmAgenda.Designer.vb">
       <DependentUpon>frmAgenda.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAgenda.vb">
+    <Compile Include="Forms\FormsGerencias\frmAgenda.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAtendentes.Designer.vb">
-      <DependentUpon>frmAtendentes.vb</DependentUpon>
+    <Compile Include="Forms\FormsCadastros\frmCadastroCirurgia.Designer.vb">
+      <DependentUpon>frmCadastroCirurgia.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAtendentes.vb">
+    <Compile Include="Forms\FormsCadastros\frmCadastroCirurgia.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmFornecedores.Designer.vb">
+    <Compile Include="Forms\FormsCadastros\frmCadastroConsulta.Designer.vb">
+      <DependentUpon>frmCadastroConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroMedico.Designer.vb">
+      <DependentUpon>frmCadastroMedico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroMedico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroPacientes.Designer.vb">
+      <DependentUpon>frmCadastroPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroSecretaria.Designer.vb">
+      <DependentUpon>frmCadastroSecretaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroSecretaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroUsuarios.Designer.vb">
+      <DependentUpon>frmCadastroUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmCirurgias.Designer.vb">
+      <DependentUpon>frmCirurgias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmCirurgias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmConsultas.Designer.vb">
+      <DependentUpon>frmConsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmConsultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmConvenios.Designer.vb">
+      <DependentUpon>frmConvenios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmConvenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmEnfermeiras.Designer.vb">
+      <DependentUpon>frmEnfermeiras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmEnfermeiras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmFornecedores.Designer.vb">
       <DependentUpon>frmFornecedores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmFornecedores.vb">
+    <Compile Include="Forms\FormsGerencias\frmFornecedores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmMedicos.Designer.vb">
+    <Compile Include="Forms\FormsGerencias\frmLeitos.Designer.vb">
+      <DependentUpon>frmLeitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmLeitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmMateriais.Designer.vb">
+      <DependentUpon>frmMateriais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmMateriais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmMedicos.Designer.vb">
       <DependentUpon>frmMedicos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmMedicos.vb">
+    <Compile Include="Forms\FormsGerencias\frmMedicos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmPacientes.Designer.vb">
+    <Compile Include="Forms\FormsGerencias\frmPacientes.Designer.vb">
       <DependentUpon>frmPacientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmPacientes.vb">
+    <Compile Include="Forms\FormsGerencias\frmPacientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroFornecedores.Designer.vb">
+      <DependentUpon>frmCadastroFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsCadastros\frmCadastroFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmSecretarias.Designer.vb">
+      <DependentUpon>frmSecretarias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmSecretarias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormsGerencias\frmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -108,28 +215,96 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\frmAgenda.resx">
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroConvenio.resx">
+      <DependentUpon>frmCadastroConvenio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroEnfermeiras.resx">
+      <DependentUpon>frmCadastroEnfermeiras.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmAgenda.resx">
       <DependentUpon>frmAgenda.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmAtendentes.resx">
-      <DependentUpon>frmAtendentes.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroCirurgia.resx">
+      <DependentUpon>frmCadastroCirurgia.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmFornecedores.resx">
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroConsulta.resx">
+      <DependentUpon>frmCadastroConsulta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroMedico.resx">
+      <DependentUpon>frmCadastroMedico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroPacientes.resx">
+      <DependentUpon>frmCadastroPacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroSecretaria.resx">
+      <DependentUpon>frmCadastroSecretaria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroUsuarios.resx">
+      <DependentUpon>frmCadastroUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmCirurgias.resx">
+      <DependentUpon>frmCirurgias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmConsultas.resx">
+      <DependentUpon>frmConsultas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmConvenios.resx">
+      <DependentUpon>frmConvenios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmEnfermeiras.resx">
+      <DependentUpon>frmEnfermeiras.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmFornecedores.resx">
       <DependentUpon>frmFornecedores.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmMedicos.resx">
+    <EmbeddedResource Include="Forms\FormsGerencias\frmLeitos.resx">
+      <DependentUpon>frmLeitos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmMateriais.resx">
+      <DependentUpon>frmMateriais.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmMedicos.resx">
       <DependentUpon>frmMedicos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmPacientes.resx">
+    <EmbeddedResource Include="Forms\FormsGerencias\frmPacientes.resx">
       <DependentUpon>frmPacientes.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroFornecedores.resx">
+      <DependentUpon>frmCadastroFornecedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmSecretarias.resx">
+      <DependentUpon>frmSecretarias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormsGerencias\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -151,7 +326,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <ProjectReference Include="..\ClinicaMedica.Classes\ClinicaMedica.Classes.vbproj">
+      <Project>{B703A294-C8B9-4937-964F-2160026C15D4}</Project>
+      <Name>ClinicaMedica.Classes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
