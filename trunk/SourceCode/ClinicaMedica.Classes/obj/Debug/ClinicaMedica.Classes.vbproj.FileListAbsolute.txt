@@ -7,3 +7,4 @@ C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.dll
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.xml
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\obj\Debug\ClinicaMedica.Classes.pdb
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.Classes\bin\Debug\Mapper.dll
