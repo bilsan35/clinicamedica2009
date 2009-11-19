@@ -52,9 +52,9 @@ Public Class frmPrincipal
     End Sub
 
     Private Sub btnFornecedores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFornecedores.Click
-        If Usuario.ToUpper() <> "TIAGO" Then
-            Return
-        End If
+        'If Usuario.ToUpper() <> "TIAGO" Then
+        '    Return
+        'End If
         For Each frm As Form In My.Application.OpenForms
             If frm.GetType().FullName = GetType(frmFornecedores).FullName Then
                 frm.BringToFront()
