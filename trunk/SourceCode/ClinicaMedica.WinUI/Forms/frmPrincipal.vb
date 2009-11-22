@@ -20,7 +20,7 @@ Public Class frmPrincipal
     End Property
 
     Public Sub bloquear()
-        'btnSecretarias.Enabled = Not Usuario.ToUpper() <> "TIAGO"
+        btnSecretarias.Enabled = _usuario.Tipo <> 2
     End Sub
 
     Private Sub btnMedicos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMedicos.Click
