@@ -10,11 +10,21 @@ Public Class frmLogin
         Dim banco As New classBanco
         Dim ds = banco.retornaDataSet("select * from tbusuario where login = '" & txtLogin.Text & "' and senha = '" & txtSenha.Text & "'")
         If ds.Tables(0).Rows.Count = 0 Then
-            MessageBox.Show("Login ou Senha Inválido!")
+            MessageBox.Show("Login ou Senha Inválido!")             
             Return
         End If
         '' preencher objeto do formPrincipal
-        frmPrincipal.Usuario = ds.Tables(0).Rows(0)("LOGIN")
+        Dim objUsuario As New classUsuario
+        objUsuario.Tipo = ds.Tables(0).Rows(0)("TIPO")
+
+        frmPrincipal.Usuario = objUsuario
+        DialogResult = Windows.Forms.DialogResult.OK
         Close()
+    End Sub
+
+    Private Sub frmLogin_FormClosed(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
+        If Not DialogResult = Windows.Forms.DialogResult.OK Then
+            End
+        End If
     End Sub
 End Class
