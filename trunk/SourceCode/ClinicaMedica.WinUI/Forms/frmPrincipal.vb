@@ -8,6 +8,7 @@ Public Class frmPrincipal
     Public Shared frmEnfermeiras As frmEnfermeiras
     Public Shared frmSecretarias As frmSecretarias
     Public Shared frmFornecedores As frmFornecedores
+    Public Shared frmConvenios As frmConvenios
 
     Private Shared _usuario As classUsuario
     Public Shared Property Usuario() As classUsuario
