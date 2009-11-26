@@ -456,6 +456,7 @@ Partial Class frmCadastroUsuarios
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnCadastrar)
         Me.Controls.Add(Me.GroupBox2)
+        Me.MinimizeBox = False
         Me.Name = "frmCadastroUsuarios"
         Me.Text = "Cadastro Usuários"
         Me.GroupBox1.ResumeLayout(False)
