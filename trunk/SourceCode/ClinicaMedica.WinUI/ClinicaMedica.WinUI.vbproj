@@ -60,22 +60,16 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Forms Principais\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms Principais\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FormsCadastros\frmCadastroConvenio.Designer.vb">
       <DependentUpon>frmCadastroConvenio.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormsCadastros\frmCadastroConvenio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormsCadastros\frmCadastroEnfermeiras.Designer.vb">
-      <DependentUpon>frmCadastroEnfermeiras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormsCadastros\frmCadastroEnfermeiras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormsGerencias\frmAgenda.Designer.vb">
-      <DependentUpon>frmAgenda.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormsGerencias\frmAgenda.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsCadastros\frmCadastroCirurgia.Designer.vb">
@@ -132,12 +126,6 @@
     <Compile Include="Forms\FormsGerencias\frmConvenios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormsGerencias\frmEnfermeiras.Designer.vb">
-      <DependentUpon>frmEnfermeiras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormsGerencias\frmEnfermeiras.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\FormsGerencias\frmFornecedores.Designer.vb">
       <DependentUpon>frmFornecedores.vb</DependentUpon>
     </Compile>
@@ -150,10 +138,10 @@
     <Compile Include="Forms\FormsGerencias\frmLeitos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmLogin.Designer.vb">
+    <Compile Include="Forms\Forms Principais\frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmLogin.vb">
+    <Compile Include="Forms\Forms Principais\frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsGerencias\frmMateriais.Designer.vb">
@@ -174,10 +162,10 @@
     <Compile Include="Forms\FormsGerencias\frmPacientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmPrincipal.Designer.vb">
+    <Compile Include="Forms\Forms Principais\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmPrincipal.vb">
+    <Compile Include="Forms\Forms Principais\frmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormsCadastros\frmCadastroFornecedores.Designer.vb">
@@ -215,16 +203,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Forms Principais\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroConvenio.resx">
       <DependentUpon>frmCadastroConvenio.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroEnfermeiras.resx">
-      <DependentUpon>frmCadastroEnfermeiras.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormsGerencias\frmAgenda.resx">
-      <DependentUpon>frmAgenda.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormsCadastros\frmCadastroCirurgia.resx">
@@ -263,10 +247,6 @@
       <DependentUpon>frmConvenios.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormsGerencias\frmEnfermeiras.resx">
-      <DependentUpon>frmEnfermeiras.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormsGerencias\frmFornecedores.resx">
       <DependentUpon>frmFornecedores.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -275,7 +255,7 @@
       <DependentUpon>frmLeitos.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLogin.resx">
+    <EmbeddedResource Include="Forms\Forms Principais\frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -291,7 +271,7 @@
       <DependentUpon>frmPacientes.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmPrincipal.resx">
+    <EmbeddedResource Include="Forms\Forms Principais\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

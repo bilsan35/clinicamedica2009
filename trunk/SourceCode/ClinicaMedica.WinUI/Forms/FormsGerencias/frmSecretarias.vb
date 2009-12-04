@@ -118,7 +118,7 @@ Public Class frmSecretarias
 #End Region
 
     Private Sub frmMedicos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        CargaGrid(txtPesquisar.Text)
+        'CargaGrid(txtPesquisar.Text)
     End Sub
 
     Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
@@ -129,4 +129,7 @@ Public Class frmSecretarias
         Remover()
     End Sub
 
+    Private Sub btnListar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnListar.Click
+        CargaGrid(txtPesquisar.Text)
+    End Sub
 End Class

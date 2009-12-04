@@ -23,16 +23,23 @@ Partial Class frmCadastroMedico
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtCRM = New System.Windows.Forms.TextBox
+        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.Label20 = New System.Windows.Forms.Label
+        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.Label18 = New System.Windows.Forms.Label
+        Me.lklCadastrar = New System.Windows.Forms.LinkLabel
+        Me.txtCelular = New System.Windows.Forms.MaskedTextBox
+        Me.txtCPF = New System.Windows.Forms.MaskedTextBox
+        Me.txtRG = New System.Windows.Forms.MaskedTextBox
+        Me.dtpDataNascimento = New System.Windows.Forms.DateTimePicker
+        Me.Label17 = New System.Windows.Forms.Label
+        Me.cboConvenio = New System.Windows.Forms.ComboBox
         Me.Label15 = New System.Windows.Forms.Label
-        Me.txtDataNascimento = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
-        Me.txtEmail = New System.Windows.Forms.TextBox
         Me.cboEstadoCivil = New System.Windows.Forms.ComboBox
         Me.rdoFeminino = New System.Windows.Forms.RadioButton
         Me.rdoMasculino = New System.Windows.Forms.RadioButton
-        Me.txtCPF = New System.Windows.Forms.TextBox
-        Me.txtRG = New System.Windows.Forms.TextBox
         Me.txtNome = New System.Windows.Forms.TextBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
@@ -40,13 +47,15 @@ Partial Class frmCadastroMedico
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label1 = New System.Windows.Forms.Label
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.txtTelefone = New System.Windows.Forms.TextBox
-        Me.cboEstado = New System.Windows.Forms.ComboBox
-        Me.txtCEP = New System.Windows.Forms.TextBox
-        Me.txtCidade = New System.Windows.Forms.TextBox
-        Me.txtBairro = New System.Windows.Forms.TextBox
         Me.txtNumero = New System.Windows.Forms.TextBox
+        Me.txtTelefone = New System.Windows.Forms.MaskedTextBox
+        Me.Label16 = New System.Windows.Forms.Label
+        Me.txtCidade = New System.Windows.Forms.TextBox
+        Me.txtCEP = New System.Windows.Forms.MaskedTextBox
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.cboEstado = New System.Windows.Forms.ComboBox
+        Me.txtBairro = New System.Windows.Forms.TextBox
+        Me.txtComplemento = New System.Windows.Forms.TextBox
         Me.txtLogradouro = New System.Windows.Forms.TextBox
         Me.Label14 = New System.Windows.Forms.Label
         Me.Label13 = New System.Windows.Forms.Label
@@ -55,25 +64,32 @@ Partial Class frmCadastroMedico
         Me.Label10 = New System.Windows.Forms.Label
         Me.Label9 = New System.Windows.Forms.Label
         Me.Label8 = New System.Windows.Forms.Label
-        Me.btnCancelar = New System.Windows.Forms.Button
         Me.btnFechar = New System.Windows.Forms.Button
         Me.btnCadastrar = New System.Windows.Forms.Button
+        Me.btnCancelar = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.txtCRM)
+        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.Label20)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.lklCadastrar)
+        Me.GroupBox1.Controls.Add(Me.txtCelular)
+        Me.GroupBox1.Controls.Add(Me.txtCPF)
+        Me.GroupBox1.Controls.Add(Me.txtRG)
+        Me.GroupBox1.Controls.Add(Me.dtpDataNascimento)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.cboConvenio)
         Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.txtDataNascimento)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.txtEmail)
         Me.GroupBox1.Controls.Add(Me.cboEstadoCivil)
         Me.GroupBox1.Controls.Add(Me.rdoFeminino)
         Me.GroupBox1.Controls.Add(Me.rdoMasculino)
-        Me.GroupBox1.Controls.Add(Me.txtCPF)
-        Me.GroupBox1.Controls.Add(Me.txtRG)
         Me.GroupBox1.Controls.Add(Me.txtNome)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -81,66 +97,145 @@ Partial Class frmCadastroMedico
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 7)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(425, 172)
-        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.Size = New System.Drawing.Size(425, 220)
+        Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Informações"
         '
-        'txtCRM
+        'TextBox4
         '
-        Me.txtCRM.Location = New System.Drawing.Point(267, 110)
-        Me.txtCRM.Name = "txtCRM"
-        Me.txtCRM.Size = New System.Drawing.Size(139, 20)
-        Me.txtCRM.TabIndex = 16
+        Me.TextBox4.Location = New System.Drawing.Point(298, 75)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(114, 20)
+        Me.TextBox4.TabIndex = 30
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(234, 79)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(31, 13)
+        Me.Label20.TabIndex = 29
+        Me.Label20.Text = "CRM"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(81, 160)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(138, 20)
+        Me.TextBox2.TabIndex = 26
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(81, 133)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(331, 20)
+        Me.TextBox1.TabIndex = 25
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(12, 164)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(38, 13)
+        Me.Label18.TabIndex = 25
+        Me.Label18.Text = "Senha"
+        '
+        'lklCadastrar
+        '
+        Me.lklCadastrar.AutoSize = True
+        Me.lklCadastrar.Location = New System.Drawing.Point(360, 192)
+        Me.lklCadastrar.Name = "lklCadastrar"
+        Me.lklCadastrar.Size = New System.Drawing.Size(52, 13)
+        Me.lklCadastrar.TabIndex = 24
+        Me.lklCadastrar.TabStop = True
+        Me.lklCadastrar.Text = "Cadastrar"
+        '
+        'txtCelular
+        '
+        Me.txtCelular.Location = New System.Drawing.Point(298, 105)
+        Me.txtCelular.Mask = "(99) 0000-0000"
+        Me.txtCelular.Name = "txtCelular"
+        Me.txtCelular.Size = New System.Drawing.Size(114, 20)
+        Me.txtCelular.TabIndex = 23
+        '
+        'txtCPF
+        '
+        Me.txtCPF.Location = New System.Drawing.Point(298, 49)
+        Me.txtCPF.Mask = "000.000.000-00"
+        Me.txtCPF.Name = "txtCPF"
+        Me.txtCPF.Size = New System.Drawing.Size(114, 20)
+        Me.txtCPF.TabIndex = 20
+        '
+        'txtRG
+        '
+        Me.txtRG.Location = New System.Drawing.Point(81, 49)
+        Me.txtRG.Mask = "00.000.000-0"
+        Me.txtRG.Name = "txtRG"
+        Me.txtRG.Size = New System.Drawing.Size(138, 20)
+        Me.txtRG.TabIndex = 9
+        '
+        'dtpDataNascimento
+        '
+        Me.dtpDataNascimento.CustomFormat = "dd/MM/yyyy"
+        Me.dtpDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpDataNascimento.Location = New System.Drawing.Point(81, 77)
+        Me.dtpDataNascimento.Name = "dtpDataNascimento"
+        Me.dtpDataNascimento.Size = New System.Drawing.Size(138, 20)
+        Me.dtpDataNascimento.TabIndex = 19
+        Me.dtpDataNascimento.Value = New Date(2009, 11, 20, 0, 0, 0, 0)
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(234, 109)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(39, 13)
+        Me.Label17.TabIndex = 17
+        Me.Label17.Text = "Celular"
+        '
+        'cboConvenio
+        '
+        Me.cboConvenio.FormattingEnabled = True
+        Me.cboConvenio.Items.AddRange(New Object() {"teste"})
+        Me.cboConvenio.Location = New System.Drawing.Point(81, 188)
+        Me.cboConvenio.Name = "cboConvenio"
+        Me.cboConvenio.Size = New System.Drawing.Size(273, 21)
+        Me.cboConvenio.TabIndex = 16
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(230, 112)
+        Me.Label15.Location = New System.Drawing.Point(12, 137)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(31, 13)
+        Me.Label15.Size = New System.Drawing.Size(33, 13)
         Me.Label15.TabIndex = 15
-        Me.Label15.Text = "CRM"
-        '
-        'txtDataNascimento
-        '
-        Me.txtDataNascimento.Location = New System.Drawing.Point(82, 81)
-        Me.txtDataNascimento.MaxLength = 10
-        Me.txtDataNascimento.Name = "txtDataNascimento"
-        Me.txtDataNascimento.Size = New System.Drawing.Size(131, 20)
-        Me.txtDataNascimento.TabIndex = 14
+        Me.Label15.Text = "Login"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(15, 84)
+        Me.Label7.Location = New System.Drawing.Point(12, 81)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(61, 13)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Data Nasc."
         '
-        'txtEmail
-        '
-        Me.txtEmail.Location = New System.Drawing.Point(82, 137)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(324, 20)
-        Me.txtEmail.TabIndex = 12
-        '
         'cboEstadoCivil
         '
         Me.cboEstadoCivil.FormattingEnabled = True
         Me.cboEstadoCivil.Items.AddRange(New Object() {"Casado(a)", "Solteiro(a)", "Divorciado(a)", "Separado(a)", "Amasiado(a)", "Viúvo(a)", "Outro"})
-        Me.cboEstadoCivil.Location = New System.Drawing.Point(285, 81)
+        Me.cboEstadoCivil.Location = New System.Drawing.Point(298, 160)
         Me.cboEstadoCivil.Name = "cboEstadoCivil"
-        Me.cboEstadoCivil.Size = New System.Drawing.Size(121, 21)
+        Me.cboEstadoCivil.Size = New System.Drawing.Size(114, 21)
         Me.cboEstadoCivil.TabIndex = 11
         '
         'rdoFeminino
         '
         Me.rdoFeminino.AutoSize = True
-        Me.rdoFeminino.Location = New System.Drawing.Point(157, 110)
+        Me.rdoFeminino.Location = New System.Drawing.Point(164, 107)
         Me.rdoFeminino.Name = "rdoFeminino"
         Me.rdoFeminino.Size = New System.Drawing.Size(67, 17)
         Me.rdoFeminino.TabIndex = 10
@@ -151,7 +246,7 @@ Partial Class frmCadastroMedico
         '
         Me.rdoMasculino.AutoSize = True
         Me.rdoMasculino.Checked = True
-        Me.rdoMasculino.Location = New System.Drawing.Point(79, 110)
+        Me.rdoMasculino.Location = New System.Drawing.Point(88, 107)
         Me.rdoMasculino.Name = "rdoMasculino"
         Me.rdoMasculino.Size = New System.Drawing.Size(73, 17)
         Me.rdoMasculino.TabIndex = 9
@@ -159,42 +254,26 @@ Partial Class frmCadastroMedico
         Me.rdoMasculino.Text = "Masculino"
         Me.rdoMasculino.UseVisualStyleBackColor = True
         '
-        'txtCPF
-        '
-        Me.txtCPF.Location = New System.Drawing.Point(264, 53)
-        Me.txtCPF.MaxLength = 14
-        Me.txtCPF.Name = "txtCPF"
-        Me.txtCPF.Size = New System.Drawing.Size(144, 20)
-        Me.txtCPF.TabIndex = 8
-        '
-        'txtRG
-        '
-        Me.txtRG.Location = New System.Drawing.Point(82, 53)
-        Me.txtRG.MaxLength = 14
-        Me.txtRG.Name = "txtRG"
-        Me.txtRG.Size = New System.Drawing.Size(131, 20)
-        Me.txtRG.TabIndex = 7
-        '
         'txtNome
         '
-        Me.txtNome.Location = New System.Drawing.Point(82, 21)
+        Me.txtNome.Location = New System.Drawing.Point(81, 21)
         Me.txtNome.Name = "txtNome"
-        Me.txtNome.Size = New System.Drawing.Size(326, 20)
+        Me.txtNome.Size = New System.Drawing.Size(331, 20)
         Me.txtNome.TabIndex = 6
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(28, 140)
+        Me.Label6.Location = New System.Drawing.Point(12, 192)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(35, 13)
+        Me.Label6.Size = New System.Drawing.Size(67, 13)
         Me.Label6.TabIndex = 5
-        Me.Label6.Text = "E-mail"
+        Me.Label6.Text = "Tipo Usuário"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(218, 85)
+        Me.Label5.Location = New System.Drawing.Point(234, 164)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(62, 13)
         Me.Label5.TabIndex = 4
@@ -203,7 +282,7 @@ Partial Class frmCadastroMedico
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(30, 112)
+        Me.Label4.Location = New System.Drawing.Point(12, 109)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(31, 13)
         Me.Label4.TabIndex = 3
@@ -212,7 +291,7 @@ Partial Class frmCadastroMedico
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(225, 57)
+        Me.Label3.Location = New System.Drawing.Point(234, 53)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(27, 13)
         Me.Label3.TabIndex = 2
@@ -221,7 +300,7 @@ Partial Class frmCadastroMedico
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(34, 57)
+        Me.Label2.Location = New System.Drawing.Point(12, 53)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(23, 13)
         Me.Label2.TabIndex = 1
@@ -230,20 +309,61 @@ Partial Class frmCadastroMedico
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 25)
+        Me.Label1.Location = New System.Drawing.Point(12, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(35, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nome"
         '
+        'txtNumero
+        '
+        Me.txtNumero.Location = New System.Drawing.Point(322, 35)
+        Me.txtNumero.Name = "txtNumero"
+        Me.txtNumero.Size = New System.Drawing.Size(82, 20)
+        Me.txtNumero.TabIndex = 22
+        '
+        'txtTelefone
+        '
+        Me.txtTelefone.Location = New System.Drawing.Point(82, 115)
+        Me.txtTelefone.Mask = "(99) 0000-0000"
+        Me.txtTelefone.Name = "txtTelefone"
+        Me.txtTelefone.Size = New System.Drawing.Size(82, 20)
+        Me.txtTelefone.TabIndex = 23
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(11, 79)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(71, 13)
+        Me.Label16.TabIndex = 21
+        Me.Label16.Text = "Complemento"
+        '
+        'txtCidade
+        '
+        Me.txtCidade.Location = New System.Drawing.Point(322, 75)
+        Me.txtCidade.Name = "txtCidade"
+        Me.txtCidade.Size = New System.Drawing.Size(84, 20)
+        Me.txtCidade.TabIndex = 18
+        '
+        'txtCEP
+        '
+        Me.txtCEP.Location = New System.Drawing.Point(322, 115)
+        Me.txtCEP.Mask = "09900-000"
+        Me.txtCEP.Name = "txtCEP"
+        Me.txtCEP.Size = New System.Drawing.Size(84, 20)
+        Me.txtCEP.TabIndex = 24
+        '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.txtTelefone)
-        Me.GroupBox2.Controls.Add(Me.cboEstado)
         Me.GroupBox2.Controls.Add(Me.txtCEP)
+        Me.GroupBox2.Controls.Add(Me.txtTelefone)
+        Me.GroupBox2.Controls.Add(Me.txtNumero)
+        Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.Controls.Add(Me.cboEstado)
         Me.GroupBox2.Controls.Add(Me.txtCidade)
         Me.GroupBox2.Controls.Add(Me.txtBairro)
-        Me.GroupBox2.Controls.Add(Me.txtNumero)
+        Me.GroupBox2.Controls.Add(Me.txtComplemento)
         Me.GroupBox2.Controls.Add(Me.txtLogradouro)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Label13)
@@ -252,70 +372,47 @@ Partial Class frmCadastroMedico
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 190)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 233)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(425, 165)
-        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabIndex = 10
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Endereço"
-        '
-        'txtTelefone
-        '
-        Me.txtTelefone.Location = New System.Drawing.Point(296, 115)
-        Me.txtTelefone.MaxLength = 14
-        Me.txtTelefone.Name = "txtTelefone"
-        Me.txtTelefone.Size = New System.Drawing.Size(108, 20)
-        Me.txtTelefone.TabIndex = 20
         '
         'cboEstado
         '
         Me.cboEstado.FormattingEnabled = True
         Me.cboEstado.Items.AddRange(New Object() {"AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"})
-        Me.cboEstado.Location = New System.Drawing.Point(177, 114)
-        Me.cboEstado.MaxLength = 2
+        Me.cboEstado.Location = New System.Drawing.Point(216, 115)
         Me.cboEstado.Name = "cboEstado"
-        Me.cboEstado.Size = New System.Drawing.Size(58, 21)
+        Me.cboEstado.Size = New System.Drawing.Size(54, 21)
         Me.cboEstado.TabIndex = 15
-        '
-        'txtCEP
-        '
-        Me.txtCEP.Location = New System.Drawing.Point(82, 114)
-        Me.txtCEP.Name = "txtCEP"
-        Me.txtCEP.Size = New System.Drawing.Size(36, 20)
-        Me.txtCEP.TabIndex = 19
-        '
-        'txtCidade
-        '
-        Me.txtCidade.Location = New System.Drawing.Point(296, 75)
-        Me.txtCidade.Name = "txtCidade"
-        Me.txtCidade.Size = New System.Drawing.Size(108, 20)
-        Me.txtCidade.TabIndex = 18
         '
         'txtBairro
         '
-        Me.txtBairro.Location = New System.Drawing.Point(166, 74)
+        Me.txtBairro.Location = New System.Drawing.Point(200, 75)
         Me.txtBairro.Name = "txtBairro"
-        Me.txtBairro.Size = New System.Drawing.Size(77, 20)
+        Me.txtBairro.Size = New System.Drawing.Size(70, 20)
         Me.txtBairro.TabIndex = 17
         '
-        'txtNumero
+        'txtComplemento
         '
-        Me.txtNumero.Location = New System.Drawing.Point(82, 74)
-        Me.txtNumero.Name = "txtNumero"
-        Me.txtNumero.Size = New System.Drawing.Size(36, 20)
-        Me.txtNumero.TabIndex = 16
+        Me.txtComplemento.Location = New System.Drawing.Point(82, 75)
+        Me.txtComplemento.Name = "txtComplemento"
+        Me.txtComplemento.Size = New System.Drawing.Size(82, 20)
+        Me.txtComplemento.TabIndex = 16
         '
         'txtLogradouro
         '
-        Me.txtLogradouro.Location = New System.Drawing.Point(82, 36)
+        Me.txtLogradouro.Location = New System.Drawing.Point(82, 35)
         Me.txtLogradouro.Name = "txtLogradouro"
-        Me.txtLogradouro.Size = New System.Drawing.Size(322, 20)
+        Me.txtLogradouro.Size = New System.Drawing.Size(188, 20)
         Me.txtLogradouro.TabIndex = 15
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(241, 117)
+        Me.Label14.Location = New System.Drawing.Point(11, 119)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(49, 13)
         Me.Label14.TabIndex = 7
@@ -324,7 +421,7 @@ Partial Class frmCadastroMedico
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(129, 118)
+        Me.Label13.Location = New System.Drawing.Point(170, 119)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(40, 13)
         Me.Label13.TabIndex = 6
@@ -333,7 +430,7 @@ Partial Class frmCadastroMedico
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(32, 118)
+        Me.Label12.Location = New System.Drawing.Point(275, 119)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(28, 13)
         Me.Label12.TabIndex = 5
@@ -342,7 +439,7 @@ Partial Class frmCadastroMedico
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(253, 78)
+        Me.Label11.Location = New System.Drawing.Point(275, 79)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(40, 13)
         Me.Label11.TabIndex = 4
@@ -351,7 +448,7 @@ Partial Class frmCadastroMedico
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(129, 77)
+        Me.Label10.Location = New System.Drawing.Point(166, 79)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(34, 13)
         Me.Label10.TabIndex = 3
@@ -360,7 +457,7 @@ Partial Class frmCadastroMedico
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(24, 77)
+        Me.Label9.Location = New System.Drawing.Point(275, 39)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 13)
         Me.Label9.TabIndex = 2
@@ -369,50 +466,53 @@ Partial Class frmCadastroMedico
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(16, 39)
+        Me.Label8.Location = New System.Drawing.Point(11, 39)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(61, 13)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Logradouro"
         '
-        'btnCancelar
-        '
-        Me.btnCancelar.Location = New System.Drawing.Point(281, 361)
-        Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 2
-        Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = True
-        '
         'btnFechar
         '
-        Me.btnFechar.Location = New System.Drawing.Point(362, 361)
+        Me.btnFechar.Location = New System.Drawing.Point(357, 404)
         Me.btnFechar.Name = "btnFechar"
         Me.btnFechar.Size = New System.Drawing.Size(75, 23)
-        Me.btnFechar.TabIndex = 3
+        Me.btnFechar.TabIndex = 12
         Me.btnFechar.Text = "Fechar"
         Me.btnFechar.UseVisualStyleBackColor = True
         '
         'btnCadastrar
         '
-        Me.btnCadastrar.Location = New System.Drawing.Point(200, 361)
+        Me.btnCadastrar.Location = New System.Drawing.Point(195, 404)
         Me.btnCadastrar.Name = "btnCadastrar"
         Me.btnCadastrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCadastrar.TabIndex = 4
+        Me.btnCadastrar.TabIndex = 11
         Me.btnCadastrar.Text = "Cadastrar"
         Me.btnCadastrar.UseVisualStyleBackColor = True
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.Location = New System.Drawing.Point(276, 404)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 13
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'frmCadastroMedico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(449, 394)
-        Me.Controls.Add(Me.btnCadastrar)
-        Me.Controls.Add(Me.btnFechar)
-        Me.Controls.Add(Me.btnCancelar)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(439, 434)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.btnFechar)
+        Me.Controls.Add(Me.btnCadastrar)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmCadastroMedico"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro Médico"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -422,23 +522,35 @@ Partial Class frmCadastroMedico
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents lklCadastrar As System.Windows.Forms.LinkLabel
+    Friend WithEvents txtCelular As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtCPF As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtRG As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents dtpDataNascimento As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents cboConvenio As System.Windows.Forms.ComboBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents cboEstadoCivil As System.Windows.Forms.ComboBox
+    Friend WithEvents rdoFeminino As System.Windows.Forms.RadioButton
+    Friend WithEvents rdoMasculino As System.Windows.Forms.RadioButton
+    Friend WithEvents txtNome As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtNumero As System.Windows.Forms.TextBox
+    Friend WithEvents txtTelefone As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents txtCidade As System.Windows.Forms.TextBox
+    Friend WithEvents txtCEP As System.Windows.Forms.MaskedTextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
-    Friend WithEvents cboEstadoCivil As System.Windows.Forms.ComboBox
-    Friend WithEvents rdoFeminino As System.Windows.Forms.RadioButton
-    Friend WithEvents rdoMasculino As System.Windows.Forms.RadioButton
-    Friend WithEvents txtCPF As System.Windows.Forms.TextBox
-    Friend WithEvents txtRG As System.Windows.Forms.TextBox
-    Friend WithEvents txtNome As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents txtDataNascimento As System.Windows.Forms.TextBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents cboEstado As System.Windows.Forms.ComboBox
+    Friend WithEvents txtBairro As System.Windows.Forms.TextBox
+    Friend WithEvents txtComplemento As System.Windows.Forms.TextBox
+    Friend WithEvents txtLogradouro As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
@@ -446,15 +558,12 @@ Partial Class frmCadastroMedico
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents txtTelefone As System.Windows.Forms.TextBox
-    Friend WithEvents cboEstado As System.Windows.Forms.ComboBox
-    Friend WithEvents txtCEP As System.Windows.Forms.TextBox
-    Friend WithEvents txtCidade As System.Windows.Forms.TextBox
-    Friend WithEvents txtBairro As System.Windows.Forms.TextBox
-    Friend WithEvents txtNumero As System.Windows.Forms.TextBox
-    Friend WithEvents txtLogradouro As System.Windows.Forms.TextBox
-    Friend WithEvents txtCRM As System.Windows.Forms.TextBox
-    Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents btnFechar As System.Windows.Forms.Button
     Friend WithEvents btnCadastrar As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label20 As System.Windows.Forms.Label
 End Class
