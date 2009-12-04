@@ -5,7 +5,6 @@ Public Class frmPrincipal
 
     Public Shared frmMedicos As frmMedicos
     Public Shared frmPacientes As frmPacientes
-    Public Shared frmEnfermeiras As frmEnfermeiras
     Public Shared frmSecretarias As frmSecretarias
     Public Shared frmFornecedores As frmFornecedores
     Public Shared frmConvenios As frmConvenios
@@ -21,7 +20,7 @@ Public Class frmPrincipal
     End Property
 
     Public Sub bloquear()
-        btnSecretarias.Enabled = _usuario.Tipo <> 2
+        'btnSecretarias.Enabled = _usuario.Tipo <> 2
     End Sub
 
     Private Sub btnMedicos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMedicos.Click
@@ -35,6 +34,7 @@ Public Class frmPrincipal
         frmMedicos = New frmMedicos
 
         frmMedicos.MdiParent = Me
+        frmMedicos.Dock = DockStyle.Fill
         frmMedicos.Show()
 
     End Sub
@@ -49,6 +49,7 @@ Public Class frmPrincipal
         frmPacientes = New frmPacientes
 
         frmPacientes.MdiParent = Me
+        frmPacientes.Dock = DockStyle.Fill
         frmPacientes.Show()
     End Sub
 
@@ -65,6 +66,7 @@ Public Class frmPrincipal
         frmFornecedores = New frmFornecedores
 
         frmFornecedores.MdiParent = Me
+        frmFornecedores.Dock = DockStyle.Fill
         frmFornecedores.Show()
     End Sub
 
@@ -79,19 +81,6 @@ Public Class frmPrincipal
 
         frmConvenios.MdiParent = Me
         frmConvenios.Show()
-    End Sub
-
-    Private Sub btnAgenda_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgenda.Click
-        For Each frm As Form In My.Application.OpenForms
-            If frm.GetType().FullName = GetType(frmAgenda).FullName Then
-                frm.BringToFront()
-                Return
-            End If
-        Next
-        frmAgenda = New frmAgenda
-
-        frmAgenda.MdiParent = Me
-        frmAgenda.Show()
     End Sub
 
     Private Sub btnConsultas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConsultas.Click
@@ -152,7 +141,7 @@ Public Class frmPrincipal
         bloquear()
     End Sub
 
-    Private Sub btnUsuarios_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUsuarios.Click
+    Private Sub btnUsuarios_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         For Each frm As Form In My.Application.OpenForms
             If frm.GetType().FullName = GetType(frmUsuarios).FullName Then
                 frm.BringToFront()
@@ -165,20 +154,21 @@ Public Class frmPrincipal
         frmUsuarios.Show()
     End Sub
 
-    Private Sub btnEnfermeiras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnfermeiras.Click
+    Private Sub btnEnfermeiras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSecretárias.Click
         For Each frm As Form In My.Application.OpenForms
-            If frm.GetType().FullName = GetType(frmEnfermeiras).FullName Then
+            If frm.GetType().FullName = GetType(frmSecretarias).FullName Then
                 frm.BringToFront()
                 Return
             End If
         Next
-        frmEnfermeiras = New frmEnfermeiras
+        frmSecretarias = New frmSecretarias
 
-        frmEnfermeiras.MdiParent = Me
-        frmEnfermeiras.Show()
+        frmSecretarias.MdiParent = Me
+        frmSecretarias.Dock = DockStyle.Fill
+        frmSecretarias.Show()
     End Sub
 
-    Private Sub btnSecretarias_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSecretarias.Click
+    Private Sub btnSecretarias_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         For Each frm As Form In My.Application.OpenForms
             If frm.GetType().FullName = GetType(frmSecretarias).FullName Then
                 frm.BringToFront()
