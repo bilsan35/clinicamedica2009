@@ -9,7 +9,7 @@ Public Class frmCadastroPacientes
         txtNome.Text = ""
         txtRG.Text = ""
         txtCPF.Text = ""
-        txtDataNascimento.Text = ""
+        dtpDataNascimento.Value = DateTime.Now
         cboEstadoCivil.SelectedIndex = 0
         rdoMasculino.Checked = True
         cboConvenio.SelectedIndex = 0
@@ -32,7 +32,7 @@ Public Class frmCadastroPacientes
             txtNome.Text = .Nome
             txtRG.Text = .RG
             txtCPF.Text = .CPF
-            txtDataNascimento.Text = .DataNascimento
+            dtpDataNascimento.Value = .DataNascimento
             cboEstadoCivil.SelectedItem = .Estado
             If .Sexo = "M" Then
                 rdoMasculino.Checked = True
@@ -91,7 +91,7 @@ Public Class frmCadastroPacientes
                 .Nome = txtNome.Text
                 .RG = txtRG.Text
                 .CPF = txtCPF.Text
-                .DataNascimento = txtDataNascimento.Text
+                .DataNascimento = dtpDataNascimento.Value
                 .EstadoCivil = cboEstadoCivil.SelectedItem
                 If rdoMasculino.Checked = True Then
                     .Sexo = "M"
@@ -126,4 +126,8 @@ Public Class frmCadastroPacientes
         Me.Hide()
     End Sub
 
+    Private Sub lklCadastrar_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lklCadastrar.LinkClicked
+        Dim frmCadastroConvenio As New frmCadastroConvenio
+        frmCadastroConvenio.ShowDialog()
+    End Sub
 End Class

@@ -49,7 +49,7 @@ Public Class frmPacientes
 
 #Region "Eventos"
 
-    Private Sub btnPesquisar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPesquisar.Click
+    Private Sub btnPesquisar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             CargaGrid(txtPesquisar.Text)
         Catch ex As Exception
@@ -69,7 +69,7 @@ Public Class frmPacientes
         End Try
     End Sub
 
-    Private Sub Grid_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles Grid.DoubleClick
+    Private Sub Grid_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs)
         Editar()
     End Sub
 
@@ -96,7 +96,7 @@ Public Class frmPacientes
         End Try
     End Sub
 
-    Private Sub Grid_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Grid.KeyDown
+    Private Sub Grid_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
         If e.KeyCode <> Keys.Delete Then
             Exit Sub
         End If
@@ -106,27 +106,29 @@ Public Class frmPacientes
 #End Region
 
     Private Sub frmPacientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        CargaGrid(txtPesquisar.Text)
+        'CargaGrid(txtPesquisar.Text)
     End Sub
 
-    Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
+    Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Editar()
     End Sub
 
-    Private Sub btnRemover_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRemover.Click
+    Private Sub btnRemover_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Remover()
+    End Sub
+
+    Private Sub btnNovo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNovo.Click
+
+        Dim frmCadastroPacientes As New frmCadastroPacientes
+        frmCadastroPacientes.ShowDialog()
+
     End Sub
 
     Private Sub btnFechar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFechar.Click
         Me.Hide()
     End Sub
 
-    Private Sub btnNovo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNovo.Click
-
-        Dim frmCadastroPacientes As New frmCadastroPacientes
-
-        frmCadastroPacientes.ShowDialog()
-
+    Private Sub btnListar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnListar.Click
+        CargaGrid(txtPesquisar.Text)
     End Sub
-
 End Class

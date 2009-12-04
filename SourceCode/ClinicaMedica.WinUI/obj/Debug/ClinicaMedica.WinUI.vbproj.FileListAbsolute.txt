@@ -10,7 +10,6 @@ C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\C
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmMedicos.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmPrincipal.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmPacientes.resources
-C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmAgenda.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmFornecedores.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmCirurgias.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmConsultas.resources
@@ -29,8 +28,7 @@ C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\bin\Debug\C
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\bin\Debug\ClinicaMedica.Classes.xml
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmCadastroUsuarios.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmUsuarios.resources
-C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmCadastroEnfermeiras.resources
-C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmEnfermeiras.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmSecretarias.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmCadastroSecretaria.resources
 C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmCadastroConvenio.resources
+C:\Users\TIAGO\Desktop\CLINICA-MEDICA\SourceCode\ClinicaMedica.WinUI\obj\Debug\ClinicaMedica.WinUI.frmMain.resources

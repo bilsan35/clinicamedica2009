@@ -61,7 +61,7 @@ Public Class frmConvenios
 
     End Sub
 
-    Private Sub btnPesquisar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPesquisar.Click
+    Private Sub btnPesquisar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             CargaGrid(txtPesquisar.Text)
         Catch ex As Exception
@@ -118,7 +118,7 @@ Public Class frmConvenios
 #End Region
 
     Private Sub frmMedicos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        CargaGrid(txtPesquisar.Text)
+        'CargaGrid(txtPesquisar.Text)
     End Sub
 
     Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
