@@ -22,6 +22,7 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.lblLoginAcesso = New System.Windows.Forms.Label
         Me.lblUsuario = New System.Windows.Forms.Label
@@ -30,7 +31,9 @@ Partial Class frmLogin
         Me.txtSenha = New System.Windows.Forms.TextBox
         Me.btnFechar = New System.Windows.Forms.Button
         Me.btnOK = New System.Windows.Forms.Button
+        Me.ErrorLogin = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Panel1.SuspendLayout()
+        CType(Me.ErrorLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -65,7 +68,7 @@ Partial Class frmLogin
         'lblSenha
         '
         Me.lblSenha.AutoSize = True
-        Me.lblSenha.Location = New System.Drawing.Point(20, 99)
+        Me.lblSenha.Location = New System.Drawing.Point(14, 99)
         Me.lblSenha.Name = "lblSenha"
         Me.lblSenha.Size = New System.Drawing.Size(44, 13)
         Me.lblSenha.TabIndex = 2
@@ -104,6 +107,10 @@ Partial Class frmLogin
         Me.btnOK.Text = "OK"
         Me.btnOK.UseVisualStyleBackColor = True
         '
+        'ErrorLogin
+        '
+        Me.ErrorLogin.ContainerControl = Me
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -116,11 +123,15 @@ Partial Class frmLogin
         Me.Controls.Add(Me.lblSenha)
         Me.Controls.Add(Me.lblUsuario)
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LOGIN"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.ErrorLogin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -133,4 +144,5 @@ Partial Class frmLogin
     Friend WithEvents txtSenha As System.Windows.Forms.TextBox
     Friend WithEvents btnFechar As System.Windows.Forms.Button
     Friend WithEvents btnOK As System.Windows.Forms.Button
+    Friend WithEvents ErrorLogin As System.Windows.Forms.ErrorProvider
 End Class
